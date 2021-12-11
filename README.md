@@ -3,10 +3,11 @@
 
  ***Ordered***
 This trait is used for comaring two persons. 
--It has an abstract method which is operator overloading to comapre two persons.
+-It has two abstract methods which overloads **'<'** and **'>'** operators to comapre two persons.
 
 **Person**
-This class extends the Ordered trait and implements two abstract operator overloading methods
+This class extends the Ordered trait and implements two abstract operator overloading methods. **'<'** and **'>'** operators are overloaded to compare Person objects based on name length and age.
+If Name length is equal the comarision goes to check for age, otherwise return according to name length.  
 
 **PersonTester**
 This scala object is used to check the functionality of Person class
